@@ -3,7 +3,6 @@
   "version": "2.1.2",
   "description": "Hook cookies get/set on Express for server-rendering",
   "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
   "files": [
     "lib"
   ],

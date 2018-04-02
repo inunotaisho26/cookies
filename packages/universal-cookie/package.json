@@ -21,7 +21,9 @@
   "author": "Benoit Tremblay <benoit@reactivestack.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rimraf lib && babel src -d lib --ignore __tests__"
+    "build": "yarn run babel && yarn run typings",
+    "babel":"rimraf lib && babel src -d lib --ignore __tests__",
+    "typings":"cp -R src/index.d.ts ./lib"
   },
   "dependencies": {
     "cookie": "^0.3.1",
